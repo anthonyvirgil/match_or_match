@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match or Match!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="assets/scripts/script.js" async></script>
+</head>
+<body>
+    <h1 class="page-title">Match or Match!</h1>
+    <div class="overlay-text visible">
+        Click To Start
+    </div>
+    <div id="game-over-title" class="overlay-text">
+        GAME OVER
+        <span class="overlay-text-small">Click To Restart</span>
+    </div>
+    <div id="win-title" class="overlay-text">
+        FANCY YOU!
+        <span class="overlay-text-small">Click To Restart</span>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-info">
+                Time <span id="time-remaining">100</span>
+            </div>
+            <div class="game-info">
+                Flips <span id="flips">0</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Momo" src="https://i.imgur.com/AvnXZMB.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Momo" src="https://i.imgur.com/AvnXZMB.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Nayeon" src="https://i.imgur.com/HmFKQnf.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Nayeon" src="https://i.imgur.com/HmFKQnf.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Sana" src="https://i.imgur.com/UPRWTHo.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Sana" src="https://i.imgur.com/UPRWTHo.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Dahyun" src="https://i.imgur.com/fsSx9n1.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Dahyun" src="https://i.imgur.com/fsSx9n1.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Tzuyu" src="https://i.imgur.com/vvGlBms.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Tzuyu" src="https://i.imgur.com/vvGlBms.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Jihyo" src="https://i.imgur.com/1s5yqES.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Jihyo" src="https://i.imgur.com/1s5yqES.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Jeongyeon" src="https://i.imgur.com/yCylnPp.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Jeongyeon" src="https://i.imgur.com/yCylnPp.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Mina" src="https://i.imgur.com/C1bGBag.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Mina" src="https://i.imgur.com/C1bGBag.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Chaeyoung" src="https://i.imgur.com/MyDKUtF.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Chaeyoung" src="https://i.imgur.com/MyDKUtF.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Twice Group" src="https://i.imgur.com/2acW6jU.jpg"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="twice-logo" alt="Twice Logo" src="https://i.imgur.com/hsPv2SI.png"/>
+            </div>
+            <div class="card-front card-face">
+                <img class="card-value" alt="Twice Group" src="https://i.imgur.com/2acW6jU.jpg"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

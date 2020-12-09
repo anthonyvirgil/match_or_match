@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+body {
+  font-family: 'Carter One', serif;
+  color: #DB3863;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #F8A8CB;
+}
+
+.page-title {
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+  margin-bottom: 10px;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game-info {
+  font-size: 2em;
+}
+
+.game-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  margin: 20px 50px 50px 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 125px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.card-front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #c5e3f6;
+}
+
+.card-back {
+  background-color: #c5e3f6;
+}
+
+.twice-logo {
+  width: 100px;
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+
+.card-back:hover .twice-logo {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card.visible .card-back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card.visible.matched .card-front {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card-value {
+  height: 100%;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+
+.card-front:hover .card-value {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card.matched .card-value {
+  opacity: 0.5;
+}
+
+.overlay-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  display: none;
+}
+
+.overlay-text.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: overlay-grow 500ms forwards;
+          animation: overlay-grow 500ms forwards;
+}
+
+.overlay-text-small {
+  font-size: .3em;
+}
+
+@-webkit-keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 7em;
+  }
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+  .game-info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
